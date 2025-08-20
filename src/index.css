@@ -1,1 +1,53 @@
 @import "tailwindcss";
+@layer components {
+    .container{
+        @apply px-2;
+    }
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+th,
+td {
+  padding: 8px;
+  border: 1px solid #384053cc;
+}
+
+@media screen and (max-width: 600px) {
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+    width: 100%;
+  }
+
+  thead {
+    display: none;
+  }
+
+  tr {
+    margin-bottom: 1rem;
+    border: 4px double #867d29e1;
+    border-radius: 8px;
+    padding: 8px;
+  }
+
+  td {
+    display: flex;
+    justify-content: center;
+    padding: 6px;
+  }
+
+  td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    margin-right: 10px;
+    color: #555;
+  }
+}

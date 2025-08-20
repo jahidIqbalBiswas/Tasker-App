@@ -35,7 +35,7 @@ export default function TaskList({ tasks, onEdit, onDelete, onFavorite }) {
               className="border-b border-[#2E3443] [&>td]:align-baseline [&>td]:px-4 [&>td]:py-2"
             >
               <td>
-                <button onClick={() => onFavorite(task.id)}>
+                <button className="text-4xl md:text-2xl" onClick={() => onFavorite(task.id)}>
                   {task.isFavorite ? (
                     <FaStar style={{ color: "yellow" }} />
                   ) : (
@@ -60,7 +60,7 @@ export default function TaskList({ tasks, onEdit, onDelete, onFavorite }) {
               </td>
               <td className="text-center">{task.priority}</td>
               <td>
-                <div className="flex items-center justify-center space-x-3">
+                <div className="flex items-center justify-center space-x-10 md:space-x-3">
                   <button
                     onClick={() => onDelete(task.id)}
                     className="text-red-500"

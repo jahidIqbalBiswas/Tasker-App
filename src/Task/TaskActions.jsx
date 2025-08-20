@@ -1,8 +1,8 @@
 export default function TaskActions({ openAddTaskModal, onDeleteAll }) {
   return (
-    <div className="mb-14 items-center justify-between sm:flex">
+    <div className="mb-14 items-center justify-between sm:flex text-center md:text-left">
       <h2 className="text-2xl font-semibold max-sm:mb-4">Your Tasks</h2>
-      <div className="flex items-center space-x-5">
+      <div className="flex items-center justify-center md:justify-start space-x-5">
         <button
           onClick={openAddTaskModal}
           className="rounded-md bg-blue-500 px-3.5 py-2.5 text-sm font-semibold"

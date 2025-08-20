@@ -67,7 +67,7 @@ export default function TaskBoard() {
     setTasks(searchResult);
   }
   return (
-    <section className="mb-20" id="tasks">
+    <section className="mb-10" id="tasks">
       {addTaskModal && (
         <AddTaskModal
           onSave={handleSaveTask}

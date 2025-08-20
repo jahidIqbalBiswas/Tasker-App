@@ -26,7 +26,7 @@ export default function AddTaskModal({ onSave, taskToUpdate, onCloseClick }) {
     <>
       <div className="bg-black/70 fixed w-full h-full z-10 top-0 left-0"></div>
       <form
-        className="mx-auto my-10 w-full max-w-[740px] rounded-xl border border-[#FEFBFB]/[36%] bg-[#191D26] p-9 max-md:px-4 lg:my-20 lg:p-11 absolute z-10 top-1/2 left-1/2
+        className="mx-auto my-10 w-full md:max-w-[740px] max-w-[400px] rounded-xl border border-[#FEFBFB]/[36%] bg-[#191D26] p-9 max-md:px-4 lg:my-20 lg:p-11 absolute z-10 md:top-1/2 sm:top-1/8 left-1/2
        transform -translate-1/2"
         onSubmit={(e) => e.preventDefault()}
       >

@@ -8,7 +8,7 @@ export default function SearchTask({onSearch}) {
   return (
     <form>
       <div className="flex">
-        <div className="relative overflow-hidden rounded-lg text-gray-50 md:min-w-[380px] lg:min-w-[440px]">
+        <div className="relative overflow-hidden rounded-lg text-gray-50 min-w-100% md:min-w-[380px] lg:min-w-[440px]">
           <input
             type="search"
             id="search-dropdown"
